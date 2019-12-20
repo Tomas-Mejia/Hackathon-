@@ -1,7 +1,12 @@
 <html>
   <head>
+  <div style="background-image:url(images/fond.jpg); border-color: #849460; border-style:solid;
+border-width: 2px; border-radius: 10px; width:800px; margin:auto; text-align:left; padding-left:80px;">
     <title>Inscription projet</title>
+	 <STYLE type="text/css">
+   H1.maclasse {border-width: 1; border: solid; text-align: center}
 	<h1> ECOLE IPSSI <h1>
+	</style>
 	<h2> Projet de startup-weekend </h2>
 	<h3> Vous etes sur la plateforme d'inscription de vos projet </h3>
   </head>
@@ -13,28 +18,34 @@
        <legend>Vos coordonnees</legend> 
    <p>
        <label for="pseudo">Votre Nom :</label>
-       <input type="text" name="NOM" id="NOM" />
+       <input type="text" name="NOM" id="NOM"  />
+	    <form method="post" action="connection.php">
         <br />
 		<br />
 		<br />
 	   <label for="pseudo">Votre Prenom :</label>
        <input type="text" name="PRENOM" id="PRENOM" />
+	    <form method="post" action="connection.php">
 	    <br />
 		<br />
 		<br />
+		
+
 	   <label for="pseudo">Email :</label>
        <input type="text" name="EMAIL" id="pseudo" placeholder="Ex : xxx@ecole-ipssi.net" size="30" maxlength="10" />
+	    <form action=“connection.php” method=“POST”>
 	   <br />
 	   <br />
        <br />
        <label for="pass">Mot de passe :</label>
        <input type="password" name="pass" id="pass" />
-	   <form method="post" action="traitement.php">
+	   <form method="post" action="connection.php">
        <br />
 		<br />
 		<br />
 	   <label for="pseudo">Votre Promotion :</label>
        <input type="text" name="PRENOM" id="PRENOM" />
+	    <form method="post" action="connection.php">
 	    <br />
 		<br />
 		<br />
@@ -46,16 +57,19 @@
 	    <br />
 		<br />
 	   <form method="post" action="traitement.php">
+	    <form method="post" action="connection.php">
    
-    <label for="pseudo"> Les membres de votre equipe : (maximum 5 personnes)</label>
+    <label for="pseudo"> Les membres de votre equipe : (maximum 5 personnes)</label> <br/>
        <input type="text" name="PRENOM" id="PRENOM" />
 	   <input type="text" name="PRENOM" id="PRENOM" />
 	   <input type="text" name="PRENOM" id="PRENOM" />
 	   <input type="text" name="PRENOM" id="PRENOM" />
 	   <input type="text" name="PRENOM" id="PRENOM" />
+	    <form method="post" action="connection.php">
 	   <p>
        <label for="ameliorer">En 5 lignes expliquez ce que vous souhaitez resoudre comme problematique ?</label><br />
        <textarea name="projet" id="projet"></textarea>
+	    <form method="post" action="connection.php">
    </p>
 </form>
    </p>
