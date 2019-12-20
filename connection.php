@@ -1,8 +1,8 @@
 <?php
-    $hostname = "localhost";
-    $username = "root";
-    $password = "root";
-    $db = "hackathon";
+    $hostname = '127.0.0.1';
+    $username = 'root';
+    $password = 'root';
+    $db = 'hackathon';
 
     $dbconnect=mysqli_connect($hostname,$username,$password,$db);
 
