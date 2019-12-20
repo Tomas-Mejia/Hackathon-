@@ -37,7 +37,7 @@ CREATE TABLE `Participant` (
   `Email` varchar(255) DEFAULT NULL,
   `Promotion` varchar(255) DEFAULT NULL,
   `Project` varchar(255) DEFAULT NULL,
-  `Comment` varchar(255) DEFAULT NULL
+  `Descriptif` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
