@@ -1,7 +1,25 @@
 .navbar-brand img{
 	max-height: 80px;
+	w
 }
 
 header{
 	background-image: url(images/accueil.png);
+	background-repeat: none;
+	min-height: 70vh;
+
+
+	background-color: rgba(0,0,0,0.5);
+	min-height: 70vh;
+
 }
+main h4{
+	display: flex;
+	color:black;
+	font-family: 'Kurale', serif;
+	
+}
+label {
+	font-family: 'Kurale', serif;
+}
+/*font-family: 'Dancing Script', cursive;*/
