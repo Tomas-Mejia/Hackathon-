@@ -11,12 +11,12 @@
     }
 
     if(isset($_POST['submit'])) {
-        $Firstname=$_POST['Firstname'];
-        $Lastname=$_POST['Lastname'];
-        $Email=$_POST['Email'];
-        $Promotion=$_POST['Promotion'];
-        $Project=$_POST['Project'];
-        $Comment=$_POST['Comment'];
+        $Firstname = mysqli_real_escape_string($_POST['$Firstname']);         
+        $Lastname=mysqli_real_escape_string($_POST['Lastname']);
+        $Email=mysqli_real_escape_string($_POST['Email']);
+        $Promotion=mysqli_real_escape_string($_POST['Promotion']);
+        $Project=mysqli_real_escape_string($_POST['Project']);
+        $Comment=mysqli_real_escape_string($_POST['Comment']);
 
         $query = "INSERT INTO Participant
         VALUES ('$Firstname', '$Lastname', '$Email', '$Promotion', '$Project', '$Comment')";
