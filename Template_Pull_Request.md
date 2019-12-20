@@ -8,4 +8,4 @@
 #### IV- Link to the related issue(s)?
 	No
 #### V- Does anything else need to be done ? (Notify someone, other issue) before deploying ?
-	Correct bugs in the bugfix feature 
+	Correct bugs in the bugfix feature ...
