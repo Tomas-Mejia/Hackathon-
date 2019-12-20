@@ -16,10 +16,10 @@
         $Email=$_POST['Email'];
         $Promotion=$_POST['Promotion'];
         $Project=$_POST['Project'];
-        $Comment=$_POST['Comment'];
+        $Descriptif=$_POST['Descriptif'];
 
         $query = "INSERT INTO Participant
-        VALUES ('$Firstname', '$Lastname', '$Email', '$Promotion', '$Project', '$Comment')";
+        VALUES ('$Firstname', '$Lastname', '$Email', '$Promotion', '$Project', '$Descriptif')";
 
         if (!mysqli_query($dbconnect, $query)) {
             die('An error occurred when submitting your review.');
