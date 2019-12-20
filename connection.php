@@ -13,18 +13,31 @@
 #Envoi du formulaire et récupération d'informations
     if(isset($_POST['submit'])) {
 
-        $Firstname=$_POST['Firstname'];
-        $Lastname=$_POST['Lastname'];
-        $Email=$_POST['Email'];
-        $Promotion=$_POST['Promotion'];
-        $Project=$_POST['Project'];
-        $Descriptif=$_POST['Descriptif'];
+        $Firstname=mysqli_real_escape_string($_POST['Firstname']);
+        $Lastname=mysqli_real_escape_string($_POST['Lastname']);
+        $Email=mysqli_real_escape_string($_POST['Email']);
+        $Promotion=mysqli_real_escape_string($_POST['Promotion']);
+        $Project=mysqli_real_escape_string($_POST['Project']);
+        $Descriptif=mysqli_real_escape_string($_POST['Descriptif']);
+        
+        $InputNomMember1=mysqli_real_escape_string($_POST['$InputNomMember1']);
+        $InputPrenomMember1=mysqli_real_escape_string($_POST['$InputPrenomMember1']);
+
       
+            
         $query = "INSERT INTO Participant
         VALUES ('$Firstname', '$Lastname', '$Email', '$Promotion', '$Project', '$Descriptif')";
+        
+        $query2 = "INSERT INTO Participant
+        VALUES ('$InputPrenomMember1', '$InputNomMember1', '$Email', '$Promotion', '$Project', '$Descriptif')";
 
         if (!mysqli_query($dbconnect, $query)) {
-            die('An error occurred when submitting your review.');
+            die('Error ajout 1 ');
+        } else {
+            echo "Participant ajouté.";
+        }
+        if (!mysqli_query($dbconnect, $query2)) {
+            die('Error ajout 2 ');
         } else {
             echo "Participant ajouté.";
         }
